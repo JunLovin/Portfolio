@@ -1,0 +1,99 @@
+:root {
+    --first-bg-color: #373737;
+    --second-bg-color: #272727;
+    --third-bg-color: #303030;
+    --first-fg-color: #ffffff;
+    --second-fg-color: #000000;
+    --anchor-bg-color: #d7b300;
+    --hover-anchor-bg-color: #e5be00;
+    --active-anchor-bg-color: #b59700;
+}
+
+body {
+    flex-direction: row;
+    align-content: center;
+    height: 95vh;
+    font-family: 'Poppins', serif;
+    background-color: var(--first-bg-color, #373737);
+    color: var(--first-fg-color, #ffffff);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80vh;
+    background-color: var(--second-bg-color, #272727);
+    border-radius: 3rem;
+    margin: 0 auto;
+}
+
+.box-template img {
+    width: 30%;
+}
+
+.nav-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    background-color: var(--third-bg-color, #303030);
+    border-radius: 3rem;
+}
+
+.nav-box img {
+    padding: 3rem;
+    width: 40%;
+    border-bottom: .2rem solid var(--second-bg-color, #070707);
+}
+
+.main-content {
+    display: block;
+    width: 100%;
+    padding: 3rem;
+    overflow: scroll;
+}
+
+.box-links {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+    width: 100%;
+}
+
+.box-links img {
+    width: 100%;
+}
+
+.anchor {
+    margin-top: 1rem;
+}
+
+.box-template {
+    background-color: var(--third-bg-color, #303030);
+    width: 100%;
+    height: 120%;
+    border-radius: 1rem;
+}
+
+.box-template .deploy {
+    color: var(--second-fg-color, #000000);
+    font-weight: bold;
+    border-radius: .5rem;
+    text-decoration: none;
+    background-color: var(--anchor-bg-color, #d7b300);
+    padding: .8rem;
+    margin-left: .5rem;
+}
+
+.box-template .deploy:hover {
+    background-color: var(--hover-anchor-bg-color, #f3ca00);
+}
+
+.box-template .deploy:active {
+    background-color: var(--hover-anchor-bg-color, #b59700);
+    position: relative;
+    top: .2rem;
+}
