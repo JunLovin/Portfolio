@@ -84,8 +84,9 @@ main {
     border-radius: .5rem;
     text-decoration: none;
     background-color: var(--anchor-bg-color, #d7b300);
-    padding: .8rem;
+    padding: 4%;
     margin-left: .5rem;
+    font-size: 80%
 }
 
 .box-template .deploy:hover {
