@@ -45,17 +45,17 @@ main {
 
 .contact {
     margin-top: 2rem;
-    margin-right: 23%;
+    width: 50%;
+    text-align: center;
 }
 
 .mail {
     display: block;
     color: var(--second-fg-color, #000);
     background-color: var(--anchor-bg-color, #d7b300);
-    padding: 20% 40%;
     border-radius: 2rem;
-    width: 100% !important;
     text-decoration: none;
+    padding: 1rem 0;
 }
 
 .box-template img {
