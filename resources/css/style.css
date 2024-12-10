@@ -28,10 +28,6 @@ main {
     margin: 0 auto;
 }
 
-.box-template img {
-    width: 30%;
-}
-
 .nav-box {
     display: flex;
     flex-direction: column;
@@ -47,11 +43,40 @@ main {
     border-bottom: .2rem solid var(--second-bg-color, #070707);
 }
 
+.contact {
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+
+.mail {
+    display: block;
+    color: var(--second-fg-color, #000);
+    background-color: var(--anchor-bg-color, #d7b300);
+    padding: 20% 40%;
+    border-radius: 2rem;
+    width: 100% !important;
+    text-decoration: none;
+}
+
+.box-template img {
+    width: 30%;
+}
+
+.box-template h6 {
+    margin-left: .7rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: var(--first-fg-color, #fff);
+    text-decoration: none;
+    font-size: 90%;
+}
+
 .main-content {
     display: block;
     width: 100%;
     padding: 3rem;
     overflow: scroll;
+    text-align: center;
 }
 
 .box-links {
@@ -65,17 +90,17 @@ main {
 
 .box-links img {
     width: 100%;
-}
-
-.anchor {
-    margin-top: 1rem;
+    border-radius: 1rem;
 }
 
 .box-template {
-    background-color: var(--third-bg-color, #303030);
     width: 100%;
     height: 120%;
     border-radius: 1rem;
+}
+
+.anchor {
+    margin-top: 1.7rem;
 }
 
 .box-template .deploy {

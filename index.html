@@ -11,6 +11,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script id="projects-template" type="text/x-handlebars-template">
+        {{#each project}}
+        <div class="box-template">
+            <a href="{{url}}" target="_blank">
+                <img src="{{src}}" alt="" class="project-img">
+                <h6>{{name}}</h6>
+                <div class="anchor">
+                    <a href="{{url}}" target="_blank" class="deploy">Ver Deploy</a>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </script>
 </head>
 
 <body>
@@ -25,40 +41,21 @@
                     <li>JavaScript</li>
                 </ul>
             </div>
+            <div class="contact">
+                <a href="mailto:mathiassaid7@outlook.es" class="mail"><i class="fa fa-user"></i> Contacto</a>
+            </div>
         </div>
         <div class="main-content">
             <h2>Sobre mí</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum nemo amet ea ipsa deserunt fugiat
                 inventore voluptate consequuntur magni commodi quis temporibus beatae, officiis vero corporis, fuga eos
                 dolorem.</p>
-                <div class="box-links">
-                    <div class="box-template">
-                        <a href="https://junlovin.github.io/Oversize-Basics" target="_blank">
-                            <img src="resources/img/Oversize-Basics.png" alt="">
-                            <div class="anchor">
-                                <a href="https://junlovin.github.io/Oversize-Basics" target="_blank" class="deploy">Ver Deploy</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="box-template">
-                        <a href="https://junlovin.github.io/Colmar-Academy" target="_blank">
-                            <img src="resources/img/Colmar-Academy.png" alt="">
-                            <div class="anchor">
-                                <a href="https://junlovin.github.io/Colmar-Academy" target="_blank" class="deploy">Ver Deploy</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="box-template">
-                        <a href="https://junlovin.github.io/Mathias" target="_blank">
-                            <img src="resources/img/Mathias-R.png" alt="">
-                            <div class="anchor">
-                                <a href="https://junlovin.github.io/Mathias" target="_blank" class="deploy">Ver Deploy</a>
-                            </div>
-                        </a>
-                    </div>
+                <h2>Proyectos</h2>
+                <div class="box-links" id="box-links">
                 </div>
         </div>
     </main>
+    <script src="resources/js/main.js"></script>
 </body>
 
 </html>
